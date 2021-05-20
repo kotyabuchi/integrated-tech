@@ -1,6 +1,7 @@
 package com.github.kotyabuchi.integratedtech
 
 import com.github.kotyabuchi.integratedtech.block.ModBlocks
+import com.github.kotyabuchi.integratedtech.item.ModItems
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent
 import net.minecraftforge.fml.event.server.FMLServerAboutToStartEvent
@@ -23,6 +24,7 @@ object IntegratedTech {
 
         // Register the KDeferredRegister to the mod-specific event bus
         ModBlocks.REGISTRY.register(MOD_BUS)
+        ModItems.REGISTRY.register(MOD_BUS)
 
         // usage of the KotlinEventBus
         MOD_BUS.addListener(::onClientSetup)
