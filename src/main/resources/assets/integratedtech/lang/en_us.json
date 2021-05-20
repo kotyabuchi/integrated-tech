@@ -1,5 +1,11 @@
 {
   "itemGroup.integratedtech":  "Integrated Tech",
   "item.integratedtech.copper_ingot": "Copper Ingot",
-  "item.integratedtech.silver_ingot": "Silver Ingot"
+  "item.integratedtech.tin_ingot": "Tin Ingot",
+  "item.integratedtech.lead_ingot": "Lead Ingot",
+  "item.integratedtech.aluminum_ingot": "Aluminum Ingot",
+  "item.integratedtech.silver_ingot": "Silver Ingot",
+  "item.integratedtech.nickel_ingot": "Nickel Ingot",
+  "item.integratedtech.titanium_ingot": "Titanium Ingot",
+  "item.integratedtech.bronze_ingot": "Bronze Ingot"
 }
