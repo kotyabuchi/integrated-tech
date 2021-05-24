@@ -2,6 +2,8 @@ package com.github.kotyabuchi.integratedtech
 
 import com.github.kotyabuchi.integratedtech.block.ModBlocks
 import com.github.kotyabuchi.integratedtech.item.ModItems
+import net.minecraft.item.ItemGroup
+import net.minecraft.item.ItemStack
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent
 import net.minecraftforge.fml.event.server.FMLServerAboutToStartEvent
@@ -18,6 +20,12 @@ object IntegratedTech {
 
     // the logger for our mod
     val LOGGER: Logger = LogManager.getLogger()
+
+    object CreativeTab: ItemGroup(ID) {
+        override fun makeIcon(): ItemStack {
+            return ItemStack(ModItems.INGOTS[MetalType.COPPER])
+        }
+    }
 
     init {
         LOGGER.log(Level.INFO, "Hello world!")

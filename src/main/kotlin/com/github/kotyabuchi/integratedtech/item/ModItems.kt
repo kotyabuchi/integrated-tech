@@ -1,6 +1,5 @@
 package com.github.kotyabuchi.integratedtech.item
 
-import com.github.kotyabuchi.integratedtech.CreativeTab
 import com.github.kotyabuchi.integratedtech.IntegratedTech
 import net.minecraft.item.Item
 import net.minecraftforge.registries.ForgeRegistries
@@ -14,7 +13,7 @@ object ModItems {
 
     init {
         MetalType.values().forEach {
-            INGOTS[it] = REGISTRY.registerObject(it.name.lowercase() + "_ingot"){ Item(Item.Properties().tab(CreativeTab)) }
+            INGOTS[it] = REGISTRY.registerObject(it.getTagName() + "_ingot"){ Item(Item.Properties().tab(IntegratedTech.CreativeTab)) }
         }
     }
 }
